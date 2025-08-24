@@ -15,7 +15,8 @@ root.resize(600 , 400)
 #login
 name_label = QLabel('Name:' , root)
 name_label.setFont(QFont('' , 24))
-name_label.move(100 , 40)
+name_label.move(100 , 30)
+name_label.resize(180 , 50)
 
 name_input = QLineEdit(root)
 name_input.setFont(QFont('' , 18))
