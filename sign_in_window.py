@@ -47,9 +47,8 @@ def sign_in_func() :
     if name and password :
         c.execute('insert into accounts values("%s" , "%s")'%(name , password))
         con.commit()
-        c.execute('create table "%s"(class char(350) , students char(350) , Notes char(350) , tests char(350) , exams char(350))'%(name))
+        c.execute('create table "%s"(seating char(350) , class char(350) , students char(350) , Notes char(350) , tests char(350) , exams char(350))'%(name))
         root.destroy()
-
 
 sign_in_button.clicked.connect(sign_in_func)
 
