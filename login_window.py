@@ -13,33 +13,33 @@ root.setWindowTitle('Class Manager')
 root.resize(600 , 400)
 
 #login
-name_label = QLabel('Name :' , root)
-name_label.setFont(QFont('Arial' , 24))
+name_label = QLabel('Name:' , root)
+name_label.setFont(QFont('' , 24))
 name_label.move(100 , 40)
 
 name_input = QLineEdit(root)
-name_input.setFont(QFont('Arial' , 18))
+name_input.setFont(QFont('' , 18))
 name_input.resize(275 , 40)
 name_input.move(210 , 35)
 
-password_label = QLabel('Password :' , root)
-password_label.setFont(QFont('Arial' , 24))
+password_label = QLabel('Password:' , root)
+password_label.setFont(QFont('' , 24))
 password_label.move(100 , 120)
-password_label.resize(160 , 50)
+password_label.resize(180 , 50)
 
 password_input = QLineEdit(root)
-password_input.setFont(QFont('Arial' , 18))
+password_input.setFont(QFont('' , 18))
 password_input.resize(213 , 40)
-password_input.move(270 , 125)
+password_input.move(280 , 125)
 
 login_button = QPushButton('Login' , root)
-login_button.setFont(QFont('Arial' , 24))
+login_button.setFont(QFont('' , 24))
 login_button.move(100 , 240)
 login_button.resize(180 , 80)
 
 #signin
 sign_in_button = QPushButton('Sign In' , root)
-sign_in_button.setFont(QFont('Arial' , 24))
+sign_in_button.setFont(QFont('' , 24))
 sign_in_button.move(310 , 240)
 sign_in_button.resize(180 , 80)
 
