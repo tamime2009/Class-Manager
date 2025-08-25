@@ -4,6 +4,7 @@ from PyQt5.QtGui import QFont
 import sqlite3
 con = sqlite3.connect('data.bd')
 c = con.cursor()
+#c.execute('create table teachers(name char(350))')
 
 #Window
 app = QApplication(sys.argv)
@@ -57,7 +58,10 @@ def login() :
         passwords.append(u[1])
     if names and passwords :
         if name in names and password in passwords :
-            pass
+            c.execute('insert into teachers values("%s")'%(name))
+            con.commit()
+            root.destroy()
+            import startup_menu
 
 def sign_in() :
     import sign_in_window
